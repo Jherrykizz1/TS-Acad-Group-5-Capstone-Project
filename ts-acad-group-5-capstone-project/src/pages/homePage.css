@@ -1,0 +1,95 @@
+:root {
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(37, 99, 235, 0.06);
+  margin: 0 0 1rem 0;
+}
+
+.heroTitle {
+  margin: 0 0 1rem 0;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  line-height: 1.1;
+}
+
+.heroSubtitle {
+  margin: 0 0 1.5rem 0;
+  color: var(--muted);
+  max-width: 55ch;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.heroMedia {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+  padding: 1.25rem;
+}
+
+.heroImage {
+  border-radius: 12px;
+}
+
+.sectionTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.sectionLead {
+  margin: 0 0 2rem 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+/* Button base */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 44px;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btnPrimary {
+  background: var(--primary);
+  color: white;
+}
+
+.btnPrimary:hover {
+  background: var(--primary-2);
+}
+
+.btnGhost {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: var(--border);
+}
+
+@media (max-width: 900px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+

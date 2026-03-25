@@ -1,0 +1,50 @@
+.contactForm {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--text);
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.contactSubmit {
+  margin-top: 0.3rem;
+}
+
+.submitOk {
+  margin: 0;
+  color: #166534;
+  font-weight: 650;
+}
+
+.submitErr {
+  margin: 0;
+  color: #b91c1c;
+  font-weight: 650;
+}
+
