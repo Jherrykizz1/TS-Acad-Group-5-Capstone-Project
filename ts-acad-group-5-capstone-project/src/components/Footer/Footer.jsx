@@ -1,55 +1,24 @@
 import './footer.css'
 
-const groupRepoUrl = import.meta.env.VITE_GROUP_REPO_URL || '#'
-
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="container footerGrid">
-        <div className="footerCol">
-          <h3 className="footerTitle">About</h3>
-          <p className="footerText">
-            Team overview for the capstone mockup. Replace this sentence with your team’s short
-            description and your members’ first names.
-          </p>
-        </div>
-
-        <div className="footerCol">
-          <h3 className="footerTitle">Team</h3>
-          <ul className="footerList">
-            <li>
-              <a className="footerLink" href="https://github.com/Anurella" target="_blank" rel="noreferrer">
-                Amaka
-              </a>
-            </li>
-            <li>
-              <a
-                className="footerLink"
-                href="https://www.linkedin.com/in/ifeomaokocha"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Ifeoma
-              </a>
-            </li>
-          </ul>
-          <p className="footerText">
-            <a className="footerLink" href="https://tsacademyonline.com/" target="_blank" rel="noreferrer">
-              TSacademy
-            </a>
-          </p>
-        </div>
-
-        <div className="footerCol">
-          <h3 className="footerTitle">Group</h3>
-          <p className="footerText">
-            <a className="footerLink" href={groupRepoUrl}>
-              TS-Acad-Group-5
-            </a>
-          </p>
+    <footer className="site-footer">
+      <div className="container">
+        <h4>About</h4>
+        <p>We are a passionate and driven team made up of Tolani, Ifeoluwa, Justice, Emmanuel, Jeremiah, Adegbenga, Serena, John, and Opeyemi. United by a shared vision, we bring together diverse strengths, ideas, and perspectives to achieve our goals and make meaningful impact.</p>
+        <br />
+        <hr />
+        <div className="row">
+          <div className="col-md-7">
+            <p>&copy;2026 Design by <a href="https://github.com/Anurella" target="_blank">Amaka</a> & <a href="https://github.com/ifeaomaa" target="_blank">Ifeaoma A.</a></p>
+            <p>Built by TSS Academy Group 5. All rights reserved.</p>
+          </div>
+          <div className="col-md-5 text-md-end">
+            <p></p>
+            <p><a href="https://tsacademyonline.com" target="_blank">TSAcademy</a></p>
+          </div>
         </div>
       </div>
     </footer>
   )
 }
-
