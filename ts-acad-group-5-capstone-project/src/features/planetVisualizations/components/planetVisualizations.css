@@ -1,0 +1,8 @@
+.vizPlaceholder {
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--muted);
+}
+

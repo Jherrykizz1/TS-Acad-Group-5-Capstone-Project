@@ -1,0 +1,21 @@
+.videoPlaceholder {
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.videoWrap {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--card);
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
