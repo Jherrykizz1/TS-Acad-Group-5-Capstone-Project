@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { fetchPlanets } from '../../../api/planetsApi.js'
 
 function normalizePlanet(p) {
-  const name = p.name ?? p.planet_name ?? p.planetName ?? 'Unknown'
+  const name = p.planet ?? p.name ?? p.planet_name ?? p.planetName ?? 'Unknown'
   const distanceFromSun =
     p.distance_from_the_sun ??
     p.distanceFromSun ??

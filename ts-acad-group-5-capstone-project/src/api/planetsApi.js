@@ -1,4 +1,4 @@
-const DEFAULT_PLANETS_ENDPOINT = 'https://planets-api.vercel.app/api/v1/planets'
+const DEFAULT_PLANETS_ENDPOINT = 'https://anurella.github.io/json/planets.json'
 
 export const PLANETS_ENDPOINT =
   import.meta.env.VITE_PLANETS_ENDPOINT || DEFAULT_PLANETS_ENDPOINT
@@ -25,6 +25,17 @@ export async function fetchPlanets({ signal } = {}) {
   }
 
   const json = await res.json()
-  return normalizePlanetsResponse(json)
+  const planets = normalizePlanetsResponse(json)
+  return planets.map((p) => {
+    // Support APIs that return relative image paths (e.g. "../images/earth.jpg")
+    if (p && typeof p.image === 'string' && p.image) {
+      try {
+        return { ...p, image: new URL(p.image, PLANETS_ENDPOINT).toString() }
+      } catch {
+        return p
+      }
+    }
+    return p
+  })
 }
 

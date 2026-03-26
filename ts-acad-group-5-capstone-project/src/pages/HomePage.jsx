@@ -1,57 +1,79 @@
-import Header from '../components/Header/Header.jsx'
 import Footer from '../components/Footer/Footer.jsx'
 import AutoplayVideo from '../components/AutoplayVideo/AutoplayVideo.jsx'
 import ScrollLink from '../components/ScrollLink/ScrollLink.jsx'
 import PlanetsSection from '../features/planets/components/PlanetsSection.jsx'
+import PlanetFactsSection from '../features/planetFacts/components/PlanetFactsSection.jsx'
 import ContactSection from '../features/contact/components/ContactSection.jsx'
 
-import heroImg from '../assets/hero.png'
+import logoImg from '../assets/Images/graphics.png'
+import planetImg from '../assets/Images/planet.png'
 import './homePage.css'
 
 export default function HomePage() {
   return (
-    <div>
-      <Header />
-
+    <div className="mockPageBg">
       <main>
-        <section className="hero section">
-          <div className="container heroGrid">
-            <div className="heroText">
-              <p className="pill">Discover planets</p>
-              <h1 className="heroTitle">Explore the solar system like never before</h1>
-              <p className="heroSubtitle">
-                Scroll to the planet section to view names, distances, and images fetched from the API.
-              </p>
-
-              <div className="heroActions">
-                <ScrollLink to="#planets" className="btn btnPrimary">
-                  Explore the Data
-                </ScrollLink>
-                <ScrollLink to="#contact" className="btn btnGhost">
-                  Contact us
-                </ScrollLink>
-              </div>
+        {/* SECTION 1 */}
+        <section className="heroMockSection" aria-label="Explore Our Solar System Through Data">
+          <div className="heroMockFrame">
+            <div className="heroMockTop">
+              <img className="heroMockLogo" src={logoImg} alt="PlanetXplore logo" />
             </div>
 
-            <div className="heroMedia" aria-hidden="true">
-              <img className="heroImage" src={heroImg} alt="" />
+            <div className="heroMockBody">
+              <div className="heroMockText">
+                <h1 className="heroMockHeading">
+                  Explore Our Solar <br />
+                  System Through Data
+                </h1>
+                <p className="heroMockSubtitle">
+                  Understand the planets not just by name, but by measurable facts. From size and mass
+                  to gravity and density, this page breaks down the solar system in a clear, data-driven way.
+                </p>
+
+                <div className="heroMockActions">
+                  <ScrollLink to="#planets" className="heroBtn heroBtnPrimary">
+                    Explore the Data
+                  </ScrollLink>
+                  <ScrollLink to="#contact" className="heroBtn heroBtnOutline">
+                    Contact Us
+                  </ScrollLink>
+                </div>
+              </div>
+
+              <div className="heroMockPlanet" aria-hidden="true">
+                <img className="heroMockPlanetImg" src={planetImg} alt="" />
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="section">
-          <div className="container">
-            <h2 className="sectionTitle">A quick look</h2>
-            <p className="sectionLead">
-              Video should autoplay, be muted, and loop (no iframe). If you have a course-provided video,
-              replace the placeholder `videoSrc` in `AutoplayVideo`.
-            </p>
-            <AutoplayVideo />
+        {/* SECTION 2 */}
+        <section className="videoMockSection" aria-label="How Planetary Data Helps Us Understand Space">
+          <div className="videoMockInner">
+            <div className="videoMockGrid">
+              <div className="videoMockCard" aria-hidden="true">
+                <AutoplayVideo />
+              </div>
+
+              <div className="videoMockText">
+                <h2 className="videoMockHeading">
+                  How Planetary Data Helps Us <br />
+                  Understand Space
+                </h2>
+                <p className="videoMockParagraph">
+                  Planetary science goes beyond images. Comparing mass,{' '}
+                  <span className="videoMockEm">diameter</span>, <span className="videoMockEm">gravity</span>, and{' '}
+                  <span className="videoMockEm">density</span>, we gain insight into how planets form, behave,
+                  and interact within the solar system.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         <PlanetsSection />
-
+        <PlanetFactsSection />
         <ContactSection />
       </main>
 

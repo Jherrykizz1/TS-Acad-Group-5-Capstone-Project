@@ -1,47 +1,75 @@
+.planetsSection {
+  background: #eef5ff;
+  padding: 3.25rem 0 3.75rem;
+}
+
+.planetsTitle {
+  margin: 0;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1d4ed8;
+}
+
+.planetsSubtitle {
+  margin: 0.35rem auto 0;
+  text-align: center;
+  max-width: 92ch;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: #334155;
+}
+
 .planetsGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
-  margin-top: 2rem;
+  margin-top: 2.1rem;
 }
 
 .planetCard {
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
   overflow: hidden;
 }
 
 .planetImage {
   width: 100%;
-  height: 170px;
-  object-fit: contain;
-  background: white;
+  height: 140px;
+  object-fit: cover;
+  background: #0b1220;
 }
 
 .planetImageFallback {
   width: 100%;
-  height: 170px;
-  background: rgba(15, 23, 42, 0.04);
+  height: 140px;
+  background: rgba(15, 23, 42, 0.06);
 }
 
 .planetCaption {
-  padding: 0.9rem 1rem 1.05rem;
+  padding: 0.65rem 0.85rem 0.85rem;
+  text-align: center;
 }
 
 .planetName {
   font-weight: 800;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.72rem;
+  color: #0f172a;
 }
 
-.planetDistance {
-  color: var(--muted);
-  line-height: 1.4;
-  font-size: 0.95rem;
+.planetDistanceLabel {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #0f172a;
 }
 
-.planetValue {
-  color: var(--text);
+.planetDistanceValue {
+  margin-top: 0.1rem;
+  font-size: 0.65rem;
+  color: rgba(15, 23, 42, 0.8);
   font-weight: 700;
 }
 
