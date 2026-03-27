@@ -1,27 +1,34 @@
 import { useMemo, useState } from 'react'
 import { submitContact } from '../../../api/contactApi.js'
 
+const MAX_MESSAGE_CHARS = 100
+
 function validate(values) {
   const errors = {}
 
-  const name = values.name.trim()
+  const fullName = values.fullName.trim()
   const email = values.email.trim()
+  const phone = values.phone.trim()
   const message = values.message.trim()
 
-  if (!name) errors.name = 'Name is required.'
-  else if (name.length < 2) errors.name = 'Name must be at least 2 characters.'
+  if (!fullName) errors.fullName = 'Full name is required.'
+  else if (fullName.length < 2) errors.fullName = 'Full name must be at least 2 characters.'
 
   if (!email) errors.email = 'Email is required.'
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Enter a valid email.'
 
+  if (!phone) errors.phone = 'Phone number is required.'
+  else if (!/^[+\d][\d\s()-]{6,}$/.test(phone)) errors.phone = 'Please enter a valid phone number.'
+
   if (!message) errors.message = 'Message is required.'
   else if (message.length < 10) errors.message = 'Message must be at least 10 characters.'
+  else if (message.length > MAX_MESSAGE_CHARS) errors.message = `Message must be ${MAX_MESSAGE_CHARS} characters or less.`
 
   return errors
 }
 
 export function useContactForm() {
-  const [values, setValues] = useState({ name: '', email: '', message: '' })
+  const [values, setValues] = useState({ fullName: '', email: '', phone: '', message: '' })
   const [errors, setErrors] = useState({})
   const [submitting, setSubmitting] = useState(false)
   const [submitMessage, setSubmitMessage] = useState('')
@@ -34,7 +41,11 @@ export function useContactForm() {
 
   function handleChange(e) {
     const { name, value } = e.target
-    setValues((prev) => ({ ...prev, [name]: value }))
+    if (name === 'message') {
+      setValues((prev) => ({ ...prev, [name]: value.slice(0, MAX_MESSAGE_CHARS) }))
+    } else {
+      setValues((prev) => ({ ...prev, [name]: value }))
+    }
     setSubmitSuccess(false)
     setSubmitMessage('')
   }
@@ -54,7 +65,7 @@ export function useContactForm() {
       await submitContact({ ...values })
       setSubmitSuccess(true)
       setSubmitMessage('Thanks! Your message has been submitted.')
-      setValues({ name: '', email: '', message: '' })
+      setValues({ fullName: '', email: '', phone: '', message: '' })
       setErrors({})
     } catch (err) {
       setSubmitSuccess(false)
@@ -71,6 +82,7 @@ export function useContactForm() {
     submitMessage,
     submitSuccess,
     canSubmit,
+    maxMessageChars: MAX_MESSAGE_CHARS,
     handleChange,
     handleSubmit,
   }

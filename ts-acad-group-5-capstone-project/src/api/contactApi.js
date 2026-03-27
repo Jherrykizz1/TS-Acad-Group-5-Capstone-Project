@@ -1,28 +1,25 @@
-const DEFAULT_CONTACT_ENDPOINT = 'https://httpbin.org/post'
+const DEFAULT_CONTACT_ENDPOINT = 'https://whitebricks.com/tsacademy.php'
 
 export const CONTACT_ENDPOINT =
   import.meta.env.VITE_CONTACT_ENDPOINT || DEFAULT_CONTACT_ENDPOINT
 
-export async function submitContact({ name, email, message }, { signal } = {}) {
+export async function submitContact({ fullName, email, phone, message }, { signal } = {}) {
+  const form = new FormData()
+  form.append('fullName', fullName)
+  form.append('email', email)
+  form.append('phone', phone)
+  form.append('message', message)
+
   const res = await fetch(CONTACT_ENDPOINT, {
     method: 'POST',
     signal,
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify({ name, email, message }),
+    body: form,
   })
 
   if (!res.ok) {
     throw new Error(`Failed to submit contact form (${res.status})`)
   }
 
-  // Some endpoints may not return JSON; try but don't fail submission flow.
-  try {
-    return await res.json()
-  } catch {
-    return null
-  }
+  return true
 }
 

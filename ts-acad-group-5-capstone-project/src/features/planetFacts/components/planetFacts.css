@@ -1,8 +1,112 @@
-.factsPlaceholder {
-  border: 1px dashed var(--border);
-  border-radius: 16px;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.6);
-  color: var(--muted);
+.factsSection {
+  background: #ffffff;
+  padding: 3.75rem 0 4rem;
+}
+
+.factsInner {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.factsTitle {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1d4ed8;
+}
+
+.factsLead {
+  margin: 0.5rem 0 1.4rem;
+  max-width: 85ch;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.factsCaption {
+  margin: 0 0 0.9rem;
+  font-size: 0.7rem;
+  color: #0f172a;
+}
+
+.factsTableWrap {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.factsTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #f3f7ff;
+}
+
+.factsTable thead th {
+  background: #1548b7;
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 0.75rem 0.7rem;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  white-space: nowrap;
+}
+
+.factsTable thead th:last-child {
+  border-right: none;
+}
+
+.factsHeadBlank {
+  width: 260px;
+}
+
+.factsTable tbody td {
+  font-size: 0.62rem;
+  padding: 0.65rem 0.7rem;
+  text-align: center;
+  color: #0f172a;
+  border-right: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  background: #f3f7ff;
+}
+
+.factsTable tbody tr:first-child td {
+  border-top: none;
+}
+
+.factsTable tbody td:last-child {
+  border-right: none;
+}
+
+.factsGroup,
+.factsSubGroup {
+  background: #cfe0ff !important;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.factsGroup {
+  width: 150px;
+}
+
+.factsSubGroup {
+  width: 120px;
+}
+
+@media (max-width: 900px) {
+  .factsTableWrap {
+    overflow-x: auto;
+  }
+
+  .factsTable {
+    min-width: 760px;
+  }
+}
+
+@media (max-width: 430px) {
+  .factsSection {
+    display: none;
+  }
 }
 

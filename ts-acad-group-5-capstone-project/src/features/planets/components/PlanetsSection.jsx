@@ -5,11 +5,12 @@ export default function PlanetsSection() {
   const { planets, loading, error } = usePlanets()
 
   return (
-    <section id="planets" className="section" aria-label="Planets">
+    <section id="planets" className="planetsSection" aria-label="Visualizing the Differences Between Planets">
       <div className="container">
-        <h2 className="sectionTitle">Planets</h2>
-        <p className="sectionLead">
-          Planet name, distance from the sun, and image are fetched dynamically from the API.
+        <h2 className="planetsTitle">Visualizing the Differences Between Planets</h2>
+        <p className="planetsSubtitle">
+          Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how
+          vastly different terrestrial planets are from gas giants and ice giants.
         </p>
 
         {loading ? <p>Loading planets...</p> : null}
@@ -17,7 +18,7 @@ export default function PlanetsSection() {
 
         {!loading && !error ? (
           <div className="planetsGrid">
-            {planets.map((planet) => (
+            {planets.slice(0, 9).map((planet) => (
               <PlanetFigure key={planet.id} planet={planet} />
             ))}
           </div>

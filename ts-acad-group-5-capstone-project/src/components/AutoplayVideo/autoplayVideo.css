@@ -1,21 +1,18 @@
-.videoPlaceholder {
-  border: 1px dashed var(--border);
-  border-radius: 16px;
-  padding: 1.25rem;
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.7);
-}
-
 .videoWrap {
-  border: 1px solid var(--border);
-  border-radius: 16px;
+  position: relative;
+  width: 340px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: 18px;
   overflow: hidden;
-  background: var(--card);
+  background: #0b1b3a;
 }
 
 .video {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
 
