@@ -24,7 +24,7 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
 5. ⁠Jeremiah --- https://github.com/Jherrykizz1
 6. Adegbenga --- https://github.com/icode-fenixwings
 7. Serena
-8. John
+8. John --- https://github.com/Drayman-307
 9. Opeyemi
 10. ⁠Jeremiah ---- https://github.com/Jeremihalvin
     
@@ -76,8 +76,8 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
 
    VITE v8.0.3  ready in 934 ms
 
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
+  ➜  Local:   http://localhost:5173/ <br>
+  ➜  Network: use --host to expose <br>
   ➜  press h + enter to show help. <br>
   
       
