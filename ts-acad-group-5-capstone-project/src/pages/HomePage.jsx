@@ -60,7 +60,7 @@ export default function HomePage() {
                   Understand Space
                 </h2>
                 <p className="videoMockParagraph">
-                  Planetary science goes beyond images. Comparing mass,{' '}
+                  Planetary science goes beyond images. Comparing <span className="videoMockEm">mass</span>,{' '}
                   <span className="videoMockEm">diameter</span>, <span className="videoMockEm">gravity</span>, and{' '}
                   <span className="videoMockEm">density</span>, we gain insight into how planets form, behave,
                   and interact within the solar system.

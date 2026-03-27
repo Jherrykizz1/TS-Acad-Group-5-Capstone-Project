@@ -1,5 +1,7 @@
 import './footer.css'
 
+const GROUP_REPO_URL = 'https://github.com'
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -13,11 +15,11 @@ export default function Footer() {
 
         <div className="footerBottom">
           <div className="footerFinePrint">
-            <div>©2026 Design by <a className="footerFineLink" href="https://github.com/Anurella" target="_blank" rel="noreferrer">Amaka</a> &amp; <a className="footerFineLink" href="https://www.linkedin.com/in/ifeomaokocha" target="_blank" rel="noreferrer">Ifeoma A.</a></div>
+            <div>©2026 Design by Serena and Tolani</div>
             <div>
               Built by{' '}
-              <a className="footerFineLink" href={groupRepoUrl}>
-                GroupName
+              <a className="footerFineLink" href="https://github.com/Jherrykizz1/TS-Acad-Group-5-Capstone-Project.git" target="_blank" rel="noreferrer">
+                TS-Acad-Group-5
               </a>
               . All rights reserved
             </div>
