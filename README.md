@@ -27,9 +27,10 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
 8. John
 9. Opeyemi
 10. ⁠Jeremiah ---- https://github.com/Jeremihalvin
+    
     <h4> Form Structure:</h4>
-    Ifeoluwa created the form structure and contributed greatly to the project as he was more vast on most of the programs like JS and React
-    ifeoluwa created the forms too with the help of everyone in the group contributing to it. </p> <br>
+    Ifeoluwa created the form structure and contributed greatly to the project, as he was more vast on most of the programs like; JS and React.
+    Ifeoluwa created the forms too with the help of everyone in the group contributing to it.
 
     <h4> Main Body component</h4>
     Everybody in the group did a colaborative support on how the design will be created, from forms to the Api's and to the colours (css styling)
@@ -42,45 +43,45 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
     Adegbenga and Jeremiah Alvin collaborated to inspect the components before they were merged to main. <br>
     
    <h4> Form Submission/ Contact </h4>
-    this was handled by Emmanuel and Tolani <br>
-  
+    This was handled by Emmanuel and Tolani <br>
     
   <h4> Leader of Group and Deployment </h4>
   Jeremiah Eyo Lead the group assisted by Justice
+  Jeremiah and Justice wrote and eddited the README.md
   Jeremiah Eyo deployed the project to Vercel <br>
   
 
   <h4> Issues Developed Durring Project Creation Process </h4>
-    Emmanuel, John and Opeyemi contributed in fixing problems some members had between Github and Vscode integration for example previewing React component on local using:     npm install
+    Emmanuel, John and Opeyemi contributed in fixing problems some members had between Github and Vscode integration for example, previewing React component on local using;
+    npm install
     npm start
     npm run  dev
     install vite etc... <br>
 
    <h4> Instructions On How To Run Project Locally </h4>
-    On github, click code then under https; copy repository link.
+    On github, click 'code' then copy https repository link.
     
   Open VsCode clone repo. and paste copied repo link.
 
   Ensure to have installed Node.js on your computer
-    still on Vscode open terminal
-    then type;
+    still on Vscode open terminal,type;
     npm install
     npm start
-    if it dosn't start; it means on Package.json the script has no "start": "vite" in it. 
+    If it dosn't start; it means on Package.json the script has no "start": "vite" in it. 
     so type npm run  dev
     also install vite. <br>
 
-   you might also need to install some react extensions like; Simple React Snippets, also on my own i downloaded Node Extensions on vscode Extension.
+   you might also need to install some react extensions like; Simple React Snippets, also on my own i downloaded Node Extensions on Vscode Extension.
    lastly you should see something like this; <br>
 
    VITE v8.0.3  ready in 934 ms
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
-  ➜  press h + enter to show help <br>
+  ➜  press h + enter to show help. <br>
   
       
-  copy the Local - http://localhost:5173/ to your browser. i use chrome.
+  After seeing this, copy the Local - http://localhost:5173/ to your browser. i use Chrome.
 
   If you type `npm start` in your terminal, it should open your browser automatically. If not, you can open it manually.      
    
