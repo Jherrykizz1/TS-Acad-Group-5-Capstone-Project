@@ -2,6 +2,11 @@ import { useMemo, useState } from 'react'
 import { submitContact } from '../../../api/contactApi.js'
 
 const MAX_MESSAGE_CHARS = 100
+const MAX_PHONE_DIGITS = 11
+
+function digitsOnly(s) {
+  return s.replace(/\D/g, '')
+}
 
 function validate(values) {
   const errors = {}
@@ -17,7 +22,10 @@ function validate(values) {
   if (!email) errors.email = 'Email is required.'
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Enter a valid email.'
 
+  const phoneDigits = digitsOnly(phone)
   if (!phone) errors.phone = 'Phone number is required.'
+  else if (phoneDigits.length > MAX_PHONE_DIGITS)
+    errors.phone = `Phone number must be at most ${MAX_PHONE_DIGITS} digits.`
   else if (!/^[+\d][\d\s()-]{6,}$/.test(phone)) errors.phone = 'Please enter a valid phone number.'
 
   if (!message) errors.message = 'Message is required.'
@@ -43,6 +51,14 @@ export function useContactForm() {
     const { name, value } = e.target
     if (name === 'message') {
       setValues((prev) => ({ ...prev, [name]: value.slice(0, MAX_MESSAGE_CHARS) }))
+    } else if (name === 'phone') {
+      const d = digitsOnly(value)
+      const clipped = d.slice(0, MAX_PHONE_DIGITS)
+      if (d.length > MAX_PHONE_DIGITS) {
+        setValues((prev) => ({ ...prev, phone: clipped }))
+      } else {
+        setValues((prev) => ({ ...prev, phone: value }))
+      }
     } else {
       setValues((prev) => ({ ...prev, [name]: value }))
     }
