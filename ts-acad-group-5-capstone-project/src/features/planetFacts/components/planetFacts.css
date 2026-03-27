@@ -104,3 +104,9 @@
   }
 }
 
+@media (max-width: 430px) {
+  .factsSection {
+    display: none;
+  }
+}
+

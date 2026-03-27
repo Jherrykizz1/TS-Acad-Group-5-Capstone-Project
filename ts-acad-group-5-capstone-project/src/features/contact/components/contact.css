@@ -5,11 +5,9 @@
 .contactGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* row-gap, column-gap */
   gap: 1.25rem 1.25rem;
 }
 
-/* Explicit placement to guarantee same-row layout */
 .fieldPhone {
   grid-column: 1;
 }
@@ -59,6 +57,7 @@
 
 .textarea {
   resize: none;
+  height: 120px;
 }
 
 .error {
@@ -120,6 +119,10 @@
   .fieldPhone,
   .fieldMessage {
     grid-column: auto;
+  }
+
+  .submitBtn {
+    width: 100%;
   }
 }
 

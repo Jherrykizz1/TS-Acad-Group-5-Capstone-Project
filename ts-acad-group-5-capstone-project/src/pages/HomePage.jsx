@@ -13,7 +13,6 @@ export default function HomePage() {
   return (
     <div className="mockPageBg">
       <main>
-        {/* SECTION 1 */}
         <section className="heroMockSection" aria-label="Explore Our Solar System Through Data">
           <div className="heroMockFrame">
             <div className="heroMockTop">
@@ -23,8 +22,8 @@ export default function HomePage() {
             <div className="heroMockBody">
               <div className="heroMockText">
                 <h1 className="heroMockHeading">
-                  Explore Our Solar <br />
-                  System Through Data
+                  Explore Our Solar System <br />
+                  Through Data
                 </h1>
                 <p className="heroMockSubtitle">
                   Understand the planets not just by name, but by measurable facts. From size and mass
@@ -48,7 +47,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* SECTION 2 */}
         <section className="videoMockSection" aria-label="How Planetary Data Helps Us Understand Space">
           <div className="videoMockInner">
             <div className="videoMockGrid">
