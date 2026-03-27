@@ -24,10 +24,9 @@ export default function AutoplayVideo({ className = '', sources = FALLBACK_SOURC
         loop
         playsInline
         preload="metadata"
-        controls={false}
+        controls
         onError={() => setIdx((i) => (i + 1 < srcList.length ? i + 1 : i))}
       />
-      <div className="videoOverlay" aria-hidden="true" />
     </div>
   )
 }

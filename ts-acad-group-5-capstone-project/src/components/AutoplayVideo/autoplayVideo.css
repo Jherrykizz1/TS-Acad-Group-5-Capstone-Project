@@ -16,35 +16,3 @@
   object-fit: cover;
 }
 
-.videoOverlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.videoOverlay::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 62px;
-  height: 62px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-}
-
-.videoOverlay::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(calc(-50% + 2px), -50%);
-  border-style: solid;
-  border-width: 11px 0 11px 18px;
-  border-color: transparent transparent transparent rgba(255, 255, 255, 0.92);
-}
-

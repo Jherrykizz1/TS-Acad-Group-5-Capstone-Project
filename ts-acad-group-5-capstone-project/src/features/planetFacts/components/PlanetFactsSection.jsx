@@ -27,7 +27,6 @@ export default function PlanetFactsSection() {
               </tr>
             </thead>
             <tbody>
-              {/* Terrestrial planets */}
               <tr>
                 <td className="factsGroup" colSpan={2} rowSpan={4}>
                   Terrestrial Planets
@@ -60,7 +59,6 @@ export default function PlanetFactsSection() {
                 <td>3.7</td>
               </tr>
 
-              {/* Jovian planets (Gas + Ice giants) */}
               <tr>
                 <td className="factsGroup" rowSpan={4}>Jovian<br />Planets</td>
                 <td className="factsSubGroup" rowSpan={2}>Gas Giants</td>
@@ -93,7 +91,6 @@ export default function PlanetFactsSection() {
                 <td>3.7</td>
               </tr>
 
-              {/* Dwarf planets */}
               <tr>
                 <td className="factsGroup" colSpan={2}>Dwarf Planets</td>
                 <td>Pluto</td>

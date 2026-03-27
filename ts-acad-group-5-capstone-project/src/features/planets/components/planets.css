@@ -14,7 +14,7 @@
 .planetsSubtitle {
   margin: 0.35rem auto 0;
   text-align: center;
-  max-width: 92ch;
+  max-width: 540px;
   font-size: 0.72rem;
   line-height: 1.45;
   color: #334155;
@@ -22,61 +22,65 @@
 
 .planetsGrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin-top: 2.1rem;
+  grid-template-columns: repeat(3, 210px);
+  column-gap: 10px;
+  row-gap: 12px;
+  justify-content: center;
+  margin-top: 1.15rem;
 }
 
 .planetCard {
   margin: 0;
+  width: 210px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(15, 23, 42, 0.06);
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
   overflow: hidden;
+  justify-self: center;
 }
 
 .planetImage {
   width: 100%;
-  height: 140px;
+  height: 134px;
   object-fit: cover;
   background: #0b1220;
 }
 
 .planetImageFallback {
   width: 100%;
-  height: 140px;
+  height: 134px;
   background: rgba(15, 23, 42, 0.06);
 }
 
 .planetCaption {
-  padding: 0.65rem 0.85rem 0.85rem;
+  padding: 0.42rem 0.45rem 0.5rem;
   text-align: center;
 }
 
 .planetName {
   font-weight: 800;
-  margin-bottom: 0.25rem;
-  font-size: 0.72rem;
+  margin-bottom: 0.12rem;
+  font-size: 0.6rem;
   color: #0f172a;
 }
 
 .planetDistanceLabel {
-  font-size: 0.65rem;
+  font-size: 0.56rem;
   font-weight: 800;
   color: #0f172a;
 }
 
 .planetDistanceValue {
-  margin-top: 0.1rem;
-  font-size: 0.65rem;
+  margin-top: 0.08rem;
+  font-size: 0.56rem;
   color: rgba(15, 23, 42, 0.8);
   font-weight: 700;
 }
 
 @media (max-width: 980px) {
   .planetsGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 210px);
   }
 }
 
@@ -104,37 +108,40 @@
   }
 
   .planetsGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 0.72rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, min(170px, 44vw)));
+    column-gap: 18px;
+    row-gap: 18px;
+    justify-content: center;
     margin-top: 1.05rem;
   }
 
   .planetCard {
-    width: calc((100% - 0.62rem) / 2);
+    width: 100%;
+    max-width: 170px;
     border-radius: 8px;
     box-shadow: none;
+    justify-self: center;
   }
 
   .planetImage,
   .planetImageFallback {
-    height: 92px;
+    height: 118px;
   }
 
   .planetCaption {
-    padding: 0.5rem 0.32rem 0.56rem;
+    padding: 0.8rem 0.6rem 0.9rem;
   }
 
   .planetName {
-    font-size: 0.62rem;
-    margin-bottom: 0.15rem;
+    font-size: 0.78rem;
+    margin-bottom: 0.35rem;
   }
 
   .planetDistanceLabel,
   .planetDistanceValue {
-    font-size: 0.6rem;
-    line-height: 1.2;
+    font-size: 0.68rem;
+    line-height: 1.25;
   }
 }
 
@@ -148,7 +155,6 @@
   }
 }
 
-/* Explicit small-device override */
 @media (max-width: 430px) {
   .planetsSection .container {
     width: calc(100% - 0.2rem) !important;
@@ -157,37 +163,39 @@
 
   .planetsGrid {
     display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    row-gap: 0.35rem !important;
-    column-gap: 0.35rem !important;
+    grid-template-columns: repeat(2, minmax(0, min(160px, 46vw))) !important;
+    row-gap: 18px !important;
+    column-gap: 18px !important;
     margin-top: 1.05rem !important;
-    justify-items: stretch !important;
+    justify-content: center !important;
+    justify-items: center !important;
   }
 
   .planetCard {
     width: 100% !important;
+    max-width: 160px !important;
     border-radius: 8px !important;
   }
 
   .planetImage,
   .planetImageFallback {
-    height: 96px !important;
+    height: 112px !important;
   }
 
   .planetCaption {
-    padding: 0.52rem 0.3rem 0.56rem !important;
+    padding: 0.78rem 0.58rem 0.9rem !important;
   }
 
   .planetName {
-    font-size: 0.62rem !important;
-    margin-bottom: 0.24rem !important;
+    font-size: 0.76rem !important;
+    margin-bottom: 0.33rem !important;
     line-height: 1.2 !important;
   }
 
   .planetDistanceLabel,
   .planetDistanceValue {
-    font-size: 0.56rem !important;
-    line-height: 1.15 !important;
+    font-size: 0.66rem !important;
+    line-height: 1.22 !important;
   }
 }
 

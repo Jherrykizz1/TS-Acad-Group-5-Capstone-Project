@@ -255,7 +255,7 @@
 
 @media (max-width: 900px) {
   .heroMockTop {
-    padding: 1.1rem 1rem 0.4rem;
+    padding: 0.95rem 1rem 2.2rem;
     display: flex;
     justify-content: center;
   }
@@ -268,12 +268,14 @@
     flex-direction: column-reverse;
     align-items: center;
     padding: 0 1.35rem 2.2rem;
-    gap: clamp(20px, 7vw, 50px);
+    gap: 20px;
   }
 
   .heroMockPlanet {
     justify-content: center;
     width: 100%;
+    margin-top: 18px;
+    margin-bottom: 0;
   }
 
   .heroMockPlanetImg {
@@ -283,12 +285,12 @@
   }
 
   .heroMockText {
-    max-width: 270px;
+    max-width: 292px;
     text-align: center;
   }
 
   .heroMockHeading {
-    font-size: 2.2rem;
+    font-size: 2.15rem;
     line-height: 1.05;
     margin-bottom: 0.95rem;
   }
@@ -300,20 +302,24 @@
   }
 
   .heroMockActions {
-    justify-content: center;
-    gap: 0.95rem;
+    width: 100%;
+    max-width: 292px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
   }
 
   .heroBtn {
     height: 36px;
-    min-width: 120px;
+    min-width: 0;
+    width: 100%;
     padding: 0 1rem;
     font-size: 0.72rem;
   }
 
   .videoMockSection {
     padding: 3.3rem 0 4rem;
-    background: #f2f5fb;
+    background: #ffffff;
   }
 
   .videoMockGrid {

@@ -20,7 +20,6 @@ export async function submitContact({ fullName, email, phone, message }, { signa
     throw new Error(`Failed to submit contact form (${res.status})`)
   }
 
-  // Endpoint may not return JSON; treat any 2xx as success.
   return true
 }
 
