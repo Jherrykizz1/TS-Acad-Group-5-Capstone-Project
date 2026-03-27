@@ -269,21 +269,13 @@
 
 @media (max-width: 900px) {
   .heroMockTop {
-<<<<<<< Updated upstream
-    padding: 0.95rem 1rem 2.2rem;
-=======
     padding: 0.95rem 1rem 2.15rem;
->>>>>>> Stashed changes
     display: flex;
     justify-content: center;
   }
 
   .heroMockLogo {
-<<<<<<< Updated upstream
-    height: 32px;
-=======
     height: 44px;
->>>>>>> Stashed changes
   }
 
   .heroMockBody {
@@ -296,11 +288,7 @@
   .heroMockPlanet {
     justify-content: center;
     width: 100%;
-<<<<<<< Updated upstream
-    margin-top: 18px;
-=======
     margin-top: 28px;
->>>>>>> Stashed changes
     margin-bottom: 0;
   }
 
@@ -345,11 +333,7 @@
 
   .videoMockSection {
     padding: 3.3rem 0 4rem;
-<<<<<<< Updated upstream
     background: #ffffff;
-=======
-    background: #f2f5fb;
->>>>>>> Stashed changes
   }
 
   .videoMockGrid {

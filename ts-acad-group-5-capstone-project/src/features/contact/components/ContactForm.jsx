@@ -74,11 +74,7 @@ export default function ContactForm() {
             value={values.message}
             onChange={handleChange}
             placeholder="Enter your message"
-<<<<<<< Updated upstream
-            rows={3}
-=======
             rows={1}
->>>>>>> Stashed changes
           />
           <div className="charHint">{maxMessageChars} characters</div>
           {errors.message ? <span className="error">{errors.message}</span> : null}
