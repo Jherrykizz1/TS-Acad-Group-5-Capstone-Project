@@ -63,6 +63,12 @@
 @media (min-width: 651px) {
   .textarea {
     height: 44px;
+<<<<<<< Updated upstream
+=======
+    min-height: 44px;
+    overflow: hidden;
+    line-height: 1.2;
+>>>>>>> Stashed changes
   }
 }
 
