@@ -1,7 +1,5 @@
 import './footer.css'
 
-const groupRepoUrl = import.meta.env.VITE_GROUP_REPO_URL || '#'
-
 export default function Footer() {
   return (
     <footer className="footer">
@@ -33,4 +31,3 @@ export default function Footer() {
     </footer>
   )
 }
-
