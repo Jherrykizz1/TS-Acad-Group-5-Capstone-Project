@@ -25,7 +25,7 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
 6. Adegbenga --- https://github.com/icode-fenixwings
 7. Serena---- https://github.com/serenachloe5
 8. John --- https://github.com/Drayman-307
-9. Opeyemi ---- github.com/Ridwanullaheth
+9. Opeyemi ---- htt://github.com/Ridwanullaheth
 10. ⁠Jeremiah ---- https://github.com/Jeremihalvin
     
     <h4> Form Structure:</h4>
