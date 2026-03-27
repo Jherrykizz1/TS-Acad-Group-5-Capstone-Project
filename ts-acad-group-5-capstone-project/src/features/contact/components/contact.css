@@ -60,6 +60,12 @@
   height: 120px;
 }
 
+@media (min-width: 651px) {
+  .textarea {
+    height: 44px;
+  }
+}
+
 .error {
   color: #b91c1c;
   font-size: 0.72rem;
