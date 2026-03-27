@@ -1,5 +1,5 @@
 # TS-Acad-Group-5-Capstone-Project
-This is about TS Academy Group 5 Capstone project of 2026
+This is about the TS Academy Group 5 Capstone project of 2026
 
 <h3> CAPSTONE PROJRCT SUMMARY </h3>
 
@@ -15,7 +15,7 @@ Finally, the completed application is deployed on a public hosting platform such
 
 Overall, this project showcases proficiency in frontend development, teamwork, problem-solving, and the ability to build and deploy a modern web application.   
 
-<h4> NAMES OF GROUP MEMBERS WITH LINKS TO THEIR GITHUB PROFIE </h4>
+<h4> NAMES OF GROUP MEMBERS WITH LINKS TO THEIR GITHUB PROFILES </h4>
 
 1. Tolani ---- https://github.com/Ogunjobitola
 2. Ifeoluwa --- https://github.com/Ifeoluwa-2402
@@ -29,15 +29,15 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
 10. ⁠Jeremiah ---- https://github.com/Jeremihalvin
     
     <h4> Form Structure:</h4>
-    Ifeoluwa created the form structure and contributed greatly to the project, as he was more vast on most of the programs like; JS and React.
-    Ifeoluwa created the forms too with the help of everyone in the group contributing to it.
+    Ifeoluwa created the form structure and contributed greatly to the project, as he was more vast on most of the programs like JS and React.
+    Ifeoluwa created the forms too, with the help of everyone in the group contributing to it.
 
     <h4> Main Body component</h4>
-    Everybody in the group did a colaborative support on how the design will be created, from forms to the Api's and to the colours (css styling)
+    Everybody in the group did a collaborative support on how the design will be created, from forms to the Api's and to the colours (CSS styling)
 
     <h4>Footer</h4>
     The footer component was done by Serena.
-    justice is the assistant leader of the group and he also created the group. Also he updated the Json Package <br>
+    justice is the assistant leader of the group, and he also created the group. Also, he updated the JSON Package <br>
     
    <h4> Vetting or Inspection </h4>
     Adegbenga and Jeremiah Alvin collaborated to inspect the components before they were merged to main. <br>
@@ -46,13 +46,13 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
     This was handled by Emmanuel and Tolani <br>
     
   <h4> Leader of Group and Deployment </h4>
-  Jeremiah Eyo Lead the group assisted by Justice
-  Jeremiah and Justice wrote and eddited the README.md
+  Jeremiah Eyo led the group, assisted by Justice <br>
+  Jeremiah and Justice wrote and edited the README.md
   Jeremiah Eyo deployed the project to Vercel <br>
   
 
   <h4> Issues Developed Durring Project Creation Process </h4>
-    Emmanuel, John and Opeyemi contributed in fixing problems some members had between Github and Vscode integration for example, previewing React component on local using;
+    Emmanuel, John, and Opeyemi contributed to fixing problems some members had between GitHub and VSCode integration, for example, previewing a React component locally.
     npm install
     npm start
     npm run  dev
@@ -61,18 +61,18 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
    <h4> Instructions On How To Run Project Locally </h4>
     On github, click 'code' then copy https repository link.
     
-  Open VsCode clone repo. and paste copied repo link.
+  Open VSCode clone repo. and paste the copied repo link.
 
-  Ensure to have installed Node.js on your computer
-    still on Vscode open terminal,type;
+  Ensure that Node.js is installed on your computer
+    still on VSCode open terminal, type;
     npm install
     npm start
-    If it dosn't start; it means on Package.json the script has no "start": "vite" in it. 
-    so type npm run  dev
-    also install vite. <br>
+    If it dosn't start, it means on Package.json the script has no "start": "vite" in it. 
+    So type npm run  dev
+    also install Vite. <br>
 
-   you might also need to install some react extensions like; Simple React Snippets, also on my own i downloaded Node Extensions on Vscode Extension.
-   lastly you should see something like this; <br>
+   You might also need to install some React extensions, like Simple React Snippets. Also, on my own i downloaded Node Extensions on VS Code Extension.
+   lastly you should see something like this: <br>
 
    VITE v8.0.3  ready in 934 ms
 
@@ -80,10 +80,10 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
   
   ➜  Network: use --host to expose <br>
   
-  ➜  press h + enter to show help. <br>
+  ➜  Press h + enter to show help. <br>
   
       
-  After seeing this, copy the Local - http://localhost:5173/ to your browser. i use Chrome.
+  After seeing this, copy the Local - http://localhost:5173/ to your browser. I use Chrome.
 
   If you type `npm start` in your terminal, it should open your browser automatically. If not, you can open it manually.      
    
