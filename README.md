@@ -23,9 +23,9 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
 4. Emmanuel --- https://github.com/Hemmykenzy
 5. ⁠Jeremiah --- https://github.com/Jherrykizz1
 6. Adegbenga --- https://github.com/icode-fenixwings
-7. Serena
+7. Serena---- https://github.com/serenachloe5
 8. John --- https://github.com/Drayman-307
-9. Opeyemi
+9. Opeyemi ---- https://gitHub.com/ridpezzy
 10. ⁠Jeremiah ---- https://github.com/Jeremihalvin
     
     <h4> Form Structure:</h4>
@@ -40,7 +40,7 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
     justice is the assistant leader of the group, and he also created the group. Also, he updated the JSON Package <br>
     
    <h4> Vetting or Inspection </h4>
-    Adegbenga and Jeremiah Alvin collaborated to inspect the components before they were merged to main. <br>
+    Adegbenga and Jeremiah Halvin collaborated to inspect the components before they were merged to main. <br>
     
    <h4> Form Submission/ Contact </h4>
     This was handled by Emmanuel and Tolani <br>
