@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm install --prefix ts-acad-group-5-capstone-project",
+  "buildCommand": "npm run build --prefix ts-acad-group-5-capstone-project",
+  "outputDirectory": "ts-acad-group-5-capstone-project/dist"
+}
