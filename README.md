@@ -86,7 +86,8 @@ Overall, this project showcases proficiency in frontend development, teamwork, p
   After seeing this, copy the Local - http://localhost:5173/ to your browser. I use Chrome.
 
   If you type `npm start` in your terminal, it should open your browser automatically. If not, you can open it manually.      
-   
+
+   Live deployment link; https://ts-academygroup5-capstoneproject.netlify.app/
     
 
     
